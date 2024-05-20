@@ -1,28 +1,31 @@
-#  Building with Polygon Bridge
-This project is a part of polygon advance course. In this course  we will deploy an NFT collection on the Ethereum blockchain, Map the collection to Polygon, and Transfer assets over via the Polygon Bridge
+# Polygon Advance module 1 Project
 
-# Description
-In order to complete the project we have follow the following steps:
+Imroz_NFT.sol Contract
 
- ### 1) Generate a 5-item collection using stable diffusion ai image generation tool
- ### 2) Store items on IPFS using pinata.cloud
- ### 3) Deploy an ERC721 or ERC1155 to the Goerli Ethereum Testnet
- ### 4) You should have a promptDescription function on the contract that returns the prompt you used to generate the images
-### 5) Write a hardhat script to batch mint all NFTs.
- ### 6) Write a hardhat script to batch transfer all NFTs from Ethereum to Polygon Mumbai using the FxPortal Bridge
-   #### Approve the NFTs to be transferred
-   #### Deposit the NFTs to the Bridge
-   #### Test balanceOf on Mumbai
+Licence: MIT
 
- # Steps to run this project
-Follow the given below steps to run this project on your VS code
- ### 1) Clone the repository
- ### 2) run ***npm i*** in the terminal to install or download all the dependencies required for this project.
- ### 3) create a .env file and store the wallet private key. 
- ### 4) run ***npx hardhat run scripts/deploy.js --network goerli*** , to deploy the contract on goerli Testnet.
- ### 5) run ***npx hardhat run scripts/batchMint.js --network goerli*** , to mint the NFTs to the given address.
- ### 5) run ***npx hardhat run scripts/batchTransfer.js --network goerli*** , to perform the approve and deposit function to ploygon testnet.
+Solidity: ^0.8.1
 
- 
- ## Author
- Atish Kumar Shah
+Generate a 5-item collection using DALL-E 2 or Midjourney:
+Both DALL-E 2 and Midjourney are AI models for image generation. To create a collection of images using either of these models, you'll need to have access to the appropriate environment and APIs provided by the creators of these models.
+
+Store items on IPFS using pinata.cloud:
+To store items on IPFS, you can use the Pinata cloud service. You'll need to sign up for an account on Pinata and follow their documentation to learn how to upload and pin your images or files to the IPFS network.
+
+Deploy an ERC721 or ERC1155 contract to the Goerli Ethereum Testnet:
+To deploy an ERC721 or ERC1155 contract to the Goerli Ethereum Testnet, you can use a development framework like Hardhat or Truffle. You'll need some Goerli test ether (ETH) to deploy the contract.
+To compile solidity file use npx hardhat compile
+To deploy contract: npx hardhat run scripts/deploy.js --network sepholia
+
+Write a Hardhat script to batch mint all NFTs (using ERC721A):
+You can use Hardhat (or another development framework) to write a script that mints multiple NFTs in a batch. For the ERC721A standard, consider using the OpenZeppelin ERC721Mintable extension for batch minting.
+To mint nfts : npx hardhat run scripts/batchMint.js --network sepolia
+
+Write a Hardhat script to batch transfer NFTs from Ethereum to Polygon Mumbai using the FxPortal Bridge:
+To transfer NFTs from Ethereum to Polygon Mumbai, you'll need to use the FxPortal Bridge, which is provided by Polygon (Matic). You'll need to set up the bridge and initiate the transfer using the correct functions and configurations.
+To approve and deposit : npx hardhat run scripts/approveDeposit.js --network sepholia
+
+
+
+Author 
+imroz
